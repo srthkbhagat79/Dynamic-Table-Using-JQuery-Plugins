@@ -1,0 +1,66 @@
+/*
+ Name:Sarthak Bhagat
+email: Sarthak_bhagat@student.uml.edu
+Course name: GUI I
+Assingment #6- Creating an Interactive Dynamic Table with Jquery Plugins
+File type: .css file
+Sources used: https://www.w3schools.com
+*/
+/* the following center aligns the texts on the page */
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+/*Add colors to the even row*/
+td:nth-child(even) {
+  background-image: linear-gradient(crimson, black);
+}
+
+/*Add colors to the odd row*/
+td:nth-child(odd) {
+  background-image: linear-gradient(lightcoral, slateblue);
+}
+
+/* this is used to style the form  */
+form {
+  background-image: linear-gradient(lightseagreen, plum);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+h3 {
+  color: red;
+}
+
+table {
+  background-color: pink;
+}
+
+/*Row font color*/
+tr {
+  color: white;
+}
+
+/*Header font color*/
+th {
+  color: black;
+}
+
+/*Colors the boxes in form to light grey*/
+#mic, #mar, #mir, #mac {
+  background-color: #D3D3D3;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}

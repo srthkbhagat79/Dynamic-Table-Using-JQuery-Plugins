@@ -1,0 +1,69 @@
+<!--
+Name:Sarthak Bhagat
+email: Sarthak_bhagat@student.uml.edu
+Course name: GUI I
+Assingment #6- Creating an Interactive Dynamic Table with Jquery Plugins
+File type: .html file
+Sources used: https://www.npmjs.com/package/rules-js
+https://www.w3schools.com
+https://getbootstrap.com/docs/4.0/components/carousel/
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/hw6.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dynamic Calculator using JQuery Plugins</title>
+</head>
+
+
+<body>
+  <!-- This was used to create a caraousel at the top of the page -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/calc.jpg" class="d-block w-100" alt="...">
+        <div class="row">
+          <div class="container-fluid">
+            <!-- The following allows the user to enter the values for the calculated results desired -->
+            <form id="insert">
+              <h1>Multiplication Table</h1>
+              <!--This provides information about the table, its purpose and its rules -->
+              <p>The calculator will provide a table based on user input. These are some rules you should follow:<br> (1)The table only accepts integer value. Strictly no decimals<br>
+                (2)Starting values has to be greater than the ending values
+              <p>
+
+              <h3>Interactive Dynamic Multiplication Table</h3>
+              <!-- Taking in user Inputs -->
+              Enter Minimum Column Value <input class="InsertValues" name="mic" id="mic" type="number"><br>
+              Enter Maximum Column Value <input class="InsertValues" name="mac" id="mac" type="number"><br>
+              Enter Minimum Row Value <input class="InsertValues" name="mir" id="mir" type="number"><br>
+              Enter Maximum Row Value <input class="InsertValues" name="mar" id="mar" type="number"><br>
+              <!-- Button added and on click displays the result if all things are inserted correctly -->
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="container-fluid pt-3">
+            <!-- The following will give calculated results in the form of a table -->
+            <table class="table table-bordered" id="print_table">
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Added Scripts -->
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+      <script src="js/hw6.js"></script>
+
+</body>
+
+</html>
